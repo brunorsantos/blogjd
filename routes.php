@@ -1,6 +1,10 @@
 <?php 
 
-$router->addRoute('GET','api/teste','controllers/index.php');
+$router->addRoute('GET','api/user','Api\UserController@index');
+$router->addRoute('POST','api/user','Api\UserController@store');
+$router->addRoute('DELETE','api/user/{id}','Api\UserController@remove');
+$router->addRoute('GET','api/user/{id}','Api\UserController@get');
+$router->addRoute('PUT','api/user/{id}','Api\UserController@update');
 
 // $router->define([
 // 	'api/teste' => 'controllers/index.php',
