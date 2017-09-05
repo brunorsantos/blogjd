@@ -6,10 +6,10 @@ use Src\Core\Model;
 /**
 * 
 */
-class User extends Model
+class Post extends Model
 {
 	
-	protected $table = 'User';
+	protected $table = 'Post';
 	protected $primaryKey = 'id';
 
 

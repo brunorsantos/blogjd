@@ -5,7 +5,7 @@
 namespace Src\Controllers;
 
 use Src\Core\App;
-use Src\User\User;
+use Src\User;
 
 
 class UserController 

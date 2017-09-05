@@ -19,8 +19,11 @@ abstract class Model
 	{
 		$object = (new static);
 		$data = App::get('database')->selectOne($object->table, $object->primaryKey,$id);
+		if (empty($data)) {
+			return null;
+		}
 		$object->id = $id;
-		return $object;
+		return $data;
 
 	}
 
