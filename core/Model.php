@@ -3,12 +3,23 @@
 namespace Src\Core;
 
 use Src\Core\App;
-
+	 /**
+     * Classe a ser extendida pelas models das aplicação, com funcionalidades abstraidas para acesso aos dados
+     * 
+     *
+     */
 abstract class Model
 {
 	protected $table;
 	protected $primaryKey;
 	protected $id;
+
+	 /**
+     * Obtem todos os registros da table a ser associada a model
+     * atraves do atributo $table da classe 
+     *
+     * @return object
+     */
 
 	public static function all()
 	{

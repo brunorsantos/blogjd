@@ -12,8 +12,7 @@ class UserController
 {
 	public function index($par = null,$par2 = null)
 	{
-		$users = User::all();
-		//dd($users);
+
 	}
 
 }

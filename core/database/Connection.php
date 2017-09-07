@@ -7,12 +7,18 @@ use PDOException;
 
 class Connection
 {
+
+	 /**
+     * Metodo estatico para que faz a conexao com o banco
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
 	
 	public static function make($config)			
 	{
 		try {
-				 //return new PDO('mysql:host=127.0.0.1;dbname=homestead','homestead','secret');			
-				// dd($config);
+
 				return new PDO( $config['connection']. ';dbname='. $config['name'],
 								$config['username'],
 								$config['password'],
